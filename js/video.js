@@ -47,7 +47,8 @@ document.querySelector("#mute").addEventListener("click", function() {
 		video.muted=true;
 		document.getElementById("mute").innerHTML="Unmute"
 	}
-	
+});
+
 document.querySelector("#slider").addEventListener("click", function() {
 	console.log(this.value);
 	video.volume=this.value/100;
