@@ -10,3 +10,12 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play()
 	document.getElementById("volume").innerHTML=video.volume*100+"%";
 	});
+
+document.querySelector("#pause").addEventListener("click", function() {
+	console.log("Pause Video");
+	video.pause();
+});
+
+/* document.querySelector("#slower").addEventListener("click", function() {
+	video.playbackRate -= .05;
+}); /*
