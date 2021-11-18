@@ -2,7 +2,6 @@ var video = document.querySelector("#player1")
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
-
 });
 
 document.querySelector("#play").addEventListener("click", function() {
@@ -16,14 +15,15 @@ document.querySelector("#pause").addEventListener("click", function() {
 	video.pause();
 });
 
-/* document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate -= .05;
-}); */
+document.querySelector("#slower").addEventListener("click", function() {
+	console.log(video.playbackRate);
+	video.playbackRate-=0.05;
+});
 
-/* faster
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate += .05;
-});*/
+	console.log(video.playbackRate);
+	video.playbackRate+=0.05;
+});
 
 /* document.querySelector('#skip').addEventListener("click", function(){
 */
