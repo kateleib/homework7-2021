@@ -35,3 +35,11 @@ document.querySelector("#slider").addEventListener("click", function() {
 	video.volume=this.value/100;
 	document.querySelector("#volume").innerHTML=this.value+"%"
 });
+
+document.querySelector("#vintage").addEventListener("click", function() {
+	video.classList.add('oldSchool')
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	video.classList.remove('oldSchool')
+});
