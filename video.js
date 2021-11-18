@@ -18,4 +18,20 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 /* document.querySelector("#slower").addEventListener("click", function() {
 	video.playbackRate -= .05;
-}); /*
+}); */
+
+/* faster
+document.querySelector("#faster").addEventListener("click", function() {
+	video.playbackRate += .05;
+});*/
+
+/* document.querySelector('#skip').addEventListener("click", function(){
+*/
+
+/* document.querySelector("#mute").addEventListener("click", function() { */
+
+document.querySelector("#slider").addEventListener("click", function() {
+	console.log(this.value);
+	video.volume=this.value/100;
+	document.querySelector("#volume").innerHTML=this.value+"%"
+});
